@@ -9,7 +9,7 @@ const CharacterList = ({characters}) => {
          
         {
         characters && characters.map((character) => {
-             return <CharacterCard character={character}/> 
+             return <header><CharacterCard character={character}/> </header>
 
                 }) 
          } 

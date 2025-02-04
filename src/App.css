@@ -17,8 +17,16 @@ h2{
     font-size:32px;
 }
 
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 header{
     display: flex;
+    justify-content: center;
     border-bottom: 1px solid #DEE2E6;
 }
 .header-block{

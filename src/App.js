@@ -33,7 +33,6 @@ function App() {
 
   return (<div>
     <Header schools={schools}/>
-    <CharacterList characters={characters}/>
   </div>
   );
 }
