@@ -2,11 +2,20 @@ import React from 'react';
 import CharacterCard from '../CharacterCard';
 
 
-const CharacterList = () => {
+const CharacterList = ({characters}) => {
     return (
+    
         <div className="cards">
-        <CharacterCard/>         <CharacterCard/>         <CharacterCard/>
-        </div>
+         
+        {
+        characters && characters.map((character) => {
+             return <CharacterCard character={character}/> 
+
+                }) 
+         } 
+   
+    </div>
+
     );
 }
 

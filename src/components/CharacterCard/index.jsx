@@ -1,24 +1,19 @@
 import React from 'react';
 import image from '../assets/image.png';
 
-
-const CharacterCard = () => {
+const CharacterCard = ({ character }) => {
     return (
         <div className="card-block">
-                <div className="card-img">
-                <img src={image} alt="Гермиона" />
-                </div>
-
-                <div className="card-text">
-                    <h3>Harry Potter</h3>
-                    <p>Actor: Emma Watson</p>
-                    <p>Gender: female</p>
-                    <p>House: Гриффиндор</p>
-                    <p>Wand core: dragon heartstring</p>
-                    <p>Alive: yes </p>
-                </div>
+            <div className="card-img">
+                <img src={'http://localhost:3000/static/' + character.image} alt={character.name} />
             </div>
+            <div className="card-text">
+                <h3>{character.name}</h3>
+                <p>{character.age} годиков</p>
+                <p>{character.schoolId}</p>
+            </div>
+        </div>
     );
-}
+};
 
 export default CharacterCard;
